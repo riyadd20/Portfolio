@@ -2,7 +2,7 @@ import React, { useEffect, useState, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import AboutMe from './aboutme';
-import Education from './Education';
+import Education from './education';
 import Experience from './Experience';
 import Projects from './projects';
 import Skills from './skills';
