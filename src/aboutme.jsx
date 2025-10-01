@@ -29,7 +29,8 @@ const AboutMe = () => {
       <div className="bg-[#2c2547] p-4 rounded-lg">
         <h3 className="text-purple-300 font-semibold mb-1">about_me</h3>
         <p>
-          <i className="bi bi-emoji-smile mr-2 text-indigo-300"></i>Code, coffee, and curiosity—that’s my rhythm. I’m <strong className="text-[#e5d4ff]">Riya Deorukhkar</strong>—a USC Computer Science grad student diving deep into full-stack development and machine learning, one coffee-fueled project at a time. I love building interfaces that feel just right and tinkering with models that uncover surprising insights.  When I’m not deep in debugging mode, I’m usually fueling up with iced coffee during library work sessions, unwinding with quick NYT mini puzzles, and building Spotify playlists to match my coding flow.
+          <i className="bi bi-emoji-smile mr-2 text-indigo-300"></i>
+          I’m <strong className="text-[#e5d4ff]">Riya Deorukhkar,</strong> a USC Computer Science graduate student with a focus on full-stack development and machine learning. I enjoy designing clean, intuitive interfaces and experimenting with models that reveal meaningful insights. Outside of code, I like tackling NYT mini puzzles, exploring new ideas, and building Spotify playlists that keep me in the flow.
         </p>
       </div>
 
@@ -56,8 +57,7 @@ const AboutMe = () => {
       <div className="bg-[#2c2547] p-4 rounded-lg">
         <h3 className="text-purple-300 font-semibold mb-1">why_me</h3>
         <p>
-          <i className="bi bi-patch-question mr-2 text-indigo-300"></i> I blend technical depth with creativity. I love building systems that are intuitive, scalable, and elegant. 
-          Good software is like good art — thoughtful and user-focused.
+          <i className="bi bi-patch-question mr-2 text-indigo-300"></i> I enjoy combining technical skill with creativity, building software that’s both practical and elegant. For me, good software is like good art, it’s thoughtful, user-focused, and designed to make life easier.
         </p>
       </div>
     </motion.div>

@@ -9,9 +9,9 @@ const experiences = [
     location: 'Mumbai, India',
     duration: 'Sep 2023 – Apr 2024',
     points: [
-      'Engineered a scalable, distributed ETL pipeline on AWS (Lambda, S3, DynamoDB, API Gateway) for a healthcare app, optimizing Lambda functions and DynamoDB queries to reduce processing time by 15% on patient imaging data.',
-      'Created Power BI dashboards with Python-driven data preprocessing and ML-based insights, aiding physiotherapists in assessments.',
-      'Automated the real-time export of patient diagnosis reports to a Flutter-based application, increasing operational efficiency by 25%.'
+      'Engineered scalable ETL pipelines on AWS (Lambda, S3, DynamoDB, API Gateway) for processing healthcare imaging data, decreasing average data processing time by 15%',
+      'Built Python workflows generating anomaly detection insights and embedding into Power BI dashboards, accelerating clinical assessments',
+      'Automated real-time export of diagnosis reports via a secure API to Flutter mobile app, reducing manual reporting time by 25%'
     ],
     tech: ['Python', 'AWS', 'DynamoDB', 'Power BI'],
   },
@@ -22,11 +22,11 @@ const experiences = [
     location: 'Mumbai, India',
     duration: 'Jun 2023 – Aug 2023',
     points: [
-      'Developed a cross-platform collaboration app in Flutter, enabling profile management, project creation, and team integration, improving team coordination and workflow efficiency.',
-      'Optimized structured data storage using JSON serialization and asynchronous local persistence (SharedPreferences), reducing app load time by 20% and improving offline access.',
-      'Leveraged GetX for real-time notifications and state management, minimizing UI rebuilds and ensuring smooth, responsive UX.'
+      'Developed a cross-platform collaboration app in Flutter, enhancing team workflow and coordination across 3 departments',
+      'Optimized data storage with JSON serialization and asynchronous persistence (SharedPreferences), reducing load times by 20%',
+      'Leveraged GetX for real-time notifications and state management, minimizing UI rebuilds and improving responsiveness'
     ],
-    tech: ['Flutter', 'Dart', 'Firebase', 'GetX'],
+    tech: ['Flutter', 'Dart', 'GetX', 'SharedPreferences (JSON serialization)'],
   }
 ];
 

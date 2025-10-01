@@ -15,6 +15,8 @@ const educationData = [
       'Web Technologies',
       'Data Science for Machine Learning',
       'Database Systems',
+      'Software Architecture',
+      'Information Retrieval'
     ],
   },
   {
@@ -22,7 +24,7 @@ const educationData = [
     logo: '/djsce_logo.png',
     school: 'D. J. Sanghvi College of Engineering',
     location: 'Mumbai, India',
-    duration: 'Dec 2020 – May 2024',
+    duration: 'Dec 2020 – June 2024',
     degree: 'B.Tech. in Information Technology (Honors in DevOps)',
     gpa: '9.16/10',
     coursework: [

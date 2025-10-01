@@ -4,69 +4,80 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     id: 1,
-    title: 'WeatherSync',
+    title: 'Resume Analyzer',
     points: [
-      'Developed a scalable Android app using Java and Jetpack Compose, leveraging MVVM architecture.',
-      'Built a high-performance Node.js backend with MongoDB for persistent, low-latency storage.',
-      'Engineered asynchronous favorites system ensuring non-blocking UI updates.'
+      'Increased resume–job match accuracy by 15% over TF-IDF/keyword baselines',
+      'Evaluated BERT vs MiniLM/MPNet and integrated Hugging Face Inference API for lightweight cloud embeddings',
+      'Delivered low-latency interactive app with FastAPI and Streamlit, deployed on Render + Streamlit Cloud'
     ],
-    tech: ['Java', 'Jetpack Compose', 'Node.js', 'MongoDB'],
-    link: '#'
+    tech: ['LLM', 'Generative AI', 'NLP', 'FastAPI', 'Python', 'Streamlit'],
+    link: 'https://github.com/riyadd20/Resume-Analyzer'
   },
   {
     id: 2,
-    title: 'SnapBook',
+    title: 'Visual System Design Playground',
     points: [
-      'Built a full-stack photography platform with image upload and client profile management.',
-      'Integrated booking system using MongoDB for handling reservations and projects.',
-      'Implemented collaborative filtering for smart photo recommendations.'
+      'Enabled real-time visualization of backend architectures and microservices, improving system comprehension',
+      'Built an interactive drag-and-drop simulator using React for easy architecture modeling',
+      'Synchronized system state in real time via Redis and WebSockets'
     ],
-    tech: ['React', 'MongoDB', 'Python', 'GCP'],
+    tech: ['React', 'Spring Boot', 'Redis', 'WebSockets'],
     link: '#'
   },
   {
     id: 3,
-    title: 'Advanced Blog App',
+    title: 'WeatherSync — Real-Time Weather App',
     points: [
-      'Created a blogging platform with a rich-text editor, REST APIs, and content filters.',
-      'Optimized backend with MySQL and pagination for smoother access and navigation.',
-      'Integrated user dashboards for personalized post tracking.'
+      'Delivered weekly/daily forecasts with interactive charts, improving user engagement',
+      'Built Android app with MVVM Jetpack Compose',
+      'Implemented RESTful Node.js APIs and MongoDB for scalable backend'
     ],
-    tech: ['Django', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
-    link: '#'
+    tech: ['Java', 'Jetpack Compose', 'Node.js', 'MongoDB'],
+    link: 'https://drive.google.com/file/d/1NxNHhFMeFAfyoKMrz-_wzjO74SUlG-RQ/view?usp=sharing'
   },
   {
     id: 4,
-    title: 'OpSkill AI',
+    title: 'Photography Sharing & Recommendation Platform',
     points: [
-      'Built a resume-job matcher using BERT-based NLP and Google Gemini API.',
-      'Generated AI-written resumes and interview prep using LLM pipelines.',
-      'Deployed FastAPI backend with Streamlit UI for real-time application.'
+      'Increased user engagement via personalized photo recommendation',
+      'Designed secure photo-sharing platform with React/JWT auth',
+      'Implemented collaborative filtering via Flask API and deployed on GCP'
     ],
-    tech: ['LLM', 'NLP', 'FastAPI', 'Streamlit'],
-    link: '#'
+    tech: ['React', 'JavaScript', 'MongoDB', 'Python', 'GCP'],
+    link: 'https://github.com/riyadd20/Photography-Platform'
   },
   {
     id: 5,
     title: 'Conversational Summarizer',
     points: [
-      'Created an NLP framework using spaCy, TF-IDF, and Wav2Vec 2.0 for summarizing speech.',
-      'Improved semantic understanding with hybrid extractive-abstractive methods.',
-      'Boosted speech-to-text precision by 15% using deep neural models.'
+      'Improved conversation summarization by 15% with a hybrid extractive-abstractive NLP pipeline',
+      'Enhanced semantic parsing and entity recognition using spaCy and NLTK',
+      'Optimized speech-to-text with Wav2Vec 2.0 and DNN and published findings in JETIR'
     ],
     tech: ['Wav2Vec 2.0', 'NLP', 'spaCy', 'NLTK'],
-    link: '#'
+    link: 'http://www.jetir.org/papers/JETIR2311382.pdf'
   },
   {
     id: 6,
-    title: 'Attendance & Drowsiness Monitoring',
+    title: 'Attendance & Attentiveness Monitoring',
     points: [
-      'Built face recognition system with Siamese Network & MTCNN achieving 95% accuracy.',
-      'Used FSRCNN for image enhancement and YOLOv5 for attention detection.',
-      'Automated attendance tracking with real-time alerts.'
+      'Achieved 95% student attendance accuracy with Siamese Networks for similarity-based recognition',
+      'Attained 90% precision in real-time drowsiness monitoring by fine-tuning YOLOv5',
+      'Improved low-light face detection robustness by 40% using MTCNN with FSRCNN super-resolution'
     ],
-    tech: ['OpenCV', 'YOLOv5', 'TensorFlow'],
+    tech: ['Python', 'OpenCV', 'YOLOv5', 'TensorFlow', 'MTCNN', 'Siamese Networks', 'FSRCNN'],
     link: '#'
+  },
+  {
+    id: 7,
+    title: 'Advanced Blog App',
+    points: [
+      'Created a blogging platform with a rich-text editor, REST APIs, and content filters',
+      'Optimized backend with MySQL and pagination for smoother access and navigation',
+      'Integrated user dashboards for personalized post tracking'
+    ],
+    tech: ['Django', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
+    link: 'https://github.com/riyadd20/Blog-App'
   }
 ];
 
@@ -121,7 +132,7 @@ const Projects = () => {
               <a
                 href={project.link}
                 className="inline-block text-sm text-blue-400 mt-3 hover:underline"
-                target="_blank"
+                target={typeof window !== "undefined" && window.innerWidth > 768 ? "_blank" : "_self"}
                 rel="noopener noreferrer"
               >
                 View project ↗

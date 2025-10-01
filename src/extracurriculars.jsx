@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const activities = [
   {
-    title: 'JPMorgan Chase External Engagement Program',
+    title: 'J. P. Morgan Chase External Engagement Program',
     duration: 'May 2023',
     description: [
       'Chosen for an exclusive tech engagement program by JPMorgan Chase',
@@ -33,7 +33,7 @@ const activities = [
     description: [
       'Directed outreach for blood donation drives and environmental initiatives',
       'Managed social media campaigns leading to a 40% increase in event turnout',
-      'Designed and distributed promotional content reaching 5,000+ students'
+      'Designed and distributed promotional content reaching 1000+ students'
     ]
   },
 ];

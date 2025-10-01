@@ -122,7 +122,7 @@ const Contact = () => {
                 value={formData[field]}
                 onChange={handleChange}
                 className="w-full px-4 py-3 bg-[#2c2547] text-[#E2E8F0] border border-[#3c2c58] rounded-md focus:ring-2 focus:ring-purple-500 focus:outline-none transition text-sm placeholder-[#9ca3af]"
-                placeholder={field === 'name' ? 'John Doe' : 'you@example.com'}
+                placeholder={field === 'name' ? 'Your name' : 'Your email'}
               />
             )}
           </div>
