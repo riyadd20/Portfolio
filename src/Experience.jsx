@@ -5,7 +5,7 @@ const experiences = [
   {
     company: 'Millie Amici LLC',
     logo: '/MillieAmici_pic.png',
-    title: 'Data Engineer Intern',
+    title: 'Software Developer Intern',
     location: 'Los Angeles, CA',
     duration: 'Feb 2026 – present',
     points: [
