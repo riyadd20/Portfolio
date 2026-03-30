@@ -9,14 +9,16 @@ const educationData = [
     location: 'Los Angeles, CA',
     duration: 'Aug 2024 – May 2026',
     degree: 'M.S. in Computer Science',
-    gpa: '3.6/4.0',
+    gpa: '3.73/4.0',
     coursework: [
       'Analysis of Algorithms',
       'Web Technologies',
       'Data Science for Machine Learning',
       'Database Systems',
       'Software Architecture',
-      'Information Retrieval'
+      'Information Retrieval',
+      'Software Engineering',
+      'Advanced Game Consoles'
     ],
   },
   {

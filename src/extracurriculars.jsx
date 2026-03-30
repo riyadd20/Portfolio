@@ -3,19 +3,35 @@ import { motion } from 'framer-motion';
 
 const activities = [
   {
-    title: 'J. P. Morgan Chase External Engagement Program',
+    title: 'J. P. Morgan Chase College-to-Corporate Program',
     duration: 'May 2023',
     description: [
-      'Chosen for an exclusive tech engagement program by JPMorgan Chase',
-      'Received industry training in Python, Alteryx, AWS DeepRacer, and other emerging technologies'
+      'Selected for JPMorgan Chase’s College-to-Corporate program with hands-on training in Python, Alteryx, and AWS DeepRacer',
+      'Secured 2nd place in an internal hackathon by building data-driven solutions under real-world constraints'
     ]
   },
   {
     title: 'Google Cloud Career Practitioner Path',
     duration: 'Jan 2023',
     description: [
-      'Completed Google Cloud’s guided career path, earning skill badges in cloud computing fundamentals',
-      'Built practical hands-on projects using GCP’s compute, storage, and ML tools'
+      'Completed Google Cloud’s career path with hands-on labs in cloud computing and serverless architecture',
+      'Built and deployed projects using GCP services including compute, storage, and cloud-native tools'
+    ]
+  },
+  {
+    title: 'NVIDIA Deep Learning Institute',
+    duration: 'Nov 2025',
+    description: [
+      'Completed GPU Acceleration with C++ Standard Library course focused on parallel programming techniques',
+      'Gained hands-on experience optimizing compute-intensive workloads using GPU acceleration'
+    ]
+  },
+  {
+    title: 'McKinsey Take You Forward Program',
+    duration: 'Dec 2025',
+    description: [
+      'Selected for McKinsey’s mentorship and career development program',
+      'Participated in consulting workshops, problem-solving sessions, and industry-led training'
     ]
   },
   {
@@ -23,8 +39,8 @@ const activities = [
     duration: 'Sep 2022 – Aug 2023',
     description: [
       'Led a 9-member team to organize technical workshops and national-level hackathons like CodeShastra',
-      'Coordinated speaker sessions, industry partnerships, and attracted 250+ participants',
-      'Boosted event engagement by 35% through creative formats and digital outreach'
+      'Coordinated industry partnerships and speaker sessions, attracting 250+ participants',
+      'Increased event attendance by 40% through strategic outreach and improved event formats'
     ]
   },
   {

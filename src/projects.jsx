@@ -4,79 +4,123 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     id: 1,
-    title: 'Resume Analyzer',
+    title: 'DropGrid',
     points: [
-      'Increased resume–job match accuracy by 15% over TF-IDF/keyword baselines',
-      'Evaluated BERT vs MiniLM/MPNet and integrated Hugging Face Inference API for lightweight cloud embeddings',
-      'Delivered low-latency interactive app with FastAPI and Streamlit, deployed on Render + Streamlit Cloud'
+      'Built real-time streetwear drop alerts using a DSL compiler with 16-thread parallel rule evaluation',
+      'Scaled asynchronous processing by separating scraping and rule evaluation via RabbitMQ and multithreading',
+      'Deployed Kubernetes-based system with Redis caching and Prometheus/Grafana monitoring for traffic spikes'
     ],
-    tech: ['LLM', 'Generative AI', 'NLP', 'FastAPI', 'Python', 'Streamlit'],
-    link: 'https://github.com/riyadd20/Resume-Analyzer'
+    tech: ['Python', 'Kubernetes', 'Redis', 'RabbitMQ', 'Prometheus', 'Grafana', 'Multithreading', 'Web Scraping'],
+    link: 'https://github.com/riyadd20/DropGrid'
   },
   {
     id: 2,
-    title: 'Visual System Design Playground',
+    title: 'CulturaRAG',
     points: [
-      'Enabled real-time visualization of backend architectures and microservices, improving system comprehension',
-      'Built an interactive drag-and-drop simulator using React for easy architecture modeling',
-      'Synchronized system state in real time via Redis and WebSockets'
+      'Engineered full-stack RAG system for querying PDF/DOCX/text with fast vector retrieval',
+      'Eliminated external embedding APIs by building local pipeline, reducing inference cost to zero',
+      'Implemented LoRA fine-tuning pipeline using HuggingFace with feedback-driven training data'
     ],
-    tech: ['React', 'Spring Boot', 'Redis', 'WebSockets'],
-    link: '#'
+    tech: ['Python', 'FastAPI', 'LangChain', 'FAISS', 'HuggingFace', 'LoRA', 'Docker'],
+    link: 'https://github.com/riyadd20/CulturaRAG'
   },
   {
     id: 3,
-    title: 'WeatherSync — Real-Time Weather App',
+    title: 'PocketLLM Portal',
     points: [
-      'Delivered weekly/daily forecasts with interactive charts, improving user engagement',
-      'Built Android app with MVVM Jetpack Compose',
-      'Implemented RESTful Node.js APIs and MongoDB for scalable backend'
+      'Built Dockerized LLM app with real-time streaming responses and persistent chat sessions',
+      'Implemented rate-limited REST APIs with caching to reduce redundant LLM calls',
+      'Designed microservices with health checks and monitoring dashboards for scalability'
     ],
-    tech: ['Java', 'Jetpack Compose', 'Node.js', 'MongoDB'],
-    link: 'https://drive.google.com/file/d/1NxNHhFMeFAfyoKMrz-_wzjO74SUlG-RQ/view?usp=sharing'
-  },
-  {
-    id: 4,
-    title: 'Photography Sharing & Recommendation Platform',
-    points: [
-      'Increased user engagement via personalized photo recommendation',
-      'Designed secure photo-sharing platform with React/JWT auth',
-      'Implemented collaborative filtering via Flask API and deployed on GCP'
-    ],
-    tech: ['React', 'JavaScript', 'MongoDB', 'Python', 'GCP'],
-    link: 'https://github.com/riyadd20/Photography-Platform'
-  },
-  {
-    id: 5,
-    title: 'Conversational Summarizer',
-    points: [
-      'Improved conversation summarization by 15% with a hybrid extractive-abstractive NLP pipeline',
-      'Enhanced semantic parsing and entity recognition using spaCy and NLTK',
-      'Optimized speech-to-text with Wav2Vec 2.0 and DNN and published findings in JETIR'
-    ],
-    tech: ['Wav2Vec 2.0', 'NLP', 'spaCy', 'NLTK'],
-    link: 'http://www.jetir.org/papers/JETIR2311382.pdf'
-  },
-  {
-    id: 6,
-    title: 'Attendance & Attentiveness Monitoring',
-    points: [
-      'Achieved 95% student attendance accuracy with Siamese Networks for similarity-based recognition',
-      'Attained 90% precision in real-time drowsiness monitoring by fine-tuning YOLOv5',
-      'Improved low-light face detection robustness by 40% using MTCNN with FSRCNN super-resolution'
-    ],
-    tech: ['Python', 'OpenCV', 'YOLOv5', 'TensorFlow', 'MTCNN', 'Siamese Networks', 'FSRCNN'],
+    tech: ['Node.js', 'Express', 'Docker', 'REST APIs', 'LLMs'],
     link: '#'
   },
   {
+    id: 4,
+    title: 'Visual System Design Playground',
+    points: [
+      'Enabled real-time visualization of backend architectures and microservices',
+      'Built interactive drag-and-drop simulator using React for architecture modeling',
+      'Synchronized system state using Redis and WebSockets for real-time updates'
+    ],
+    tech: ['React', 'Spring Boot', 'Redis', 'WebSockets', 'Distributed Systems'],
+    link: '#'
+  },
+  {
+    id: 5,
+    title: 'Resume Analyzer',
+    points: [
+      'Increased resume–job match accuracy by 15% over TF-IDF/keyword baselines',
+      'Evaluated BERT vs MiniLM/MPNet and integrated Hugging Face embeddings',
+      'Built low-latency app using FastAPI and Streamlit with cloud deployment'
+    ],
+    tech: ['Python', 'FastAPI', 'NLP', 'HuggingFace', 'Streamlit'],
+    link: 'https://github.com/riyadd20/Resume-Analyzer'
+  },
+  {
+    id: 6,
+    title: 'WeatherSync — Real-Time Weather App',
+    points: [
+      'Built cross-platform weather app delivering real-time forecasts and visualizations',
+      'Developed scalable backend APIs with Node.js and MongoDB for low-latency access',
+      'Deployed on GCP with location-based forecasting and maps integration'
+    ],
+    tech: ['React', 'Node.js', 'MongoDB', 'GCP', 'Jetpack Compose'],
+    link: 'https://drive.google.com/file/d/1NxNHhFMeFAfyoKMrz-_wzjO74SUlG-RQ/view?usp=sharing'
+  },
+  {
     id: 7,
+    title: 'Gravity Flip Platformer Engine',
+    points: [
+      'Built modular 2D platformer engine with decoupled physics and gameplay systems',
+      'Designed event-driven state machine for handling gravity, collisions, and player states',
+      'Added telemetry logging for gameplay tuning and performance insights'
+    ],
+    tech: ['C#', 'Unity', 'Game Development', 'OOP', 'Design Patterns'],
+    link: '#'
+  },
+  {
+    id: 8,
+    title: 'Photography Sharing & Recommendation Platform',
+    points: [
+      'Built secure photo-sharing platform with JWT authentication and user-scoped access',
+      'Implemented collaborative filtering recommendation engine via Flask API',
+      'Optimized MongoDB queries to reduce metadata retrieval latency'
+    ],
+    tech: ['React', 'MongoDB', 'Python', 'Flask', 'GCP', 'JWT Authentication', 'Collaborative Filtering'],
+    link: 'https://github.com/riyadd20/Photography-Platform'
+  },
+  {
+    id: 9,
+    title: 'Attendance & Attentiveness Monitoring',
+    points: [
+      'Achieved 95% attendance accuracy using Siamese Networks and MTCNN',
+      'Built real-time drowsiness detection with YOLOv5 achieving 90% precision',
+      'Improved low-light detection by 40% using FSRCNN super-resolution'
+    ],
+    tech: ['Python', 'OpenCV', 'YOLOv5', 'Deep Learning', 'Computer Vision', 'Siamese Networks', 'MTCNN', 'FSRCNN'],
+    link: '#'
+  },
+  {
+    id: 10,
+    title: 'Conversational Summarizer',
+    points: [
+      'Improved summarization accuracy by 15% using hybrid extractive-abstractive NLP',
+      'Enhanced semantic parsing and entity recognition with spaCy and NLTK',
+      'Optimized speech-to-text pipeline using Wav2Vec 2.0 and DNN (published research)'
+    ],
+    tech: ['Python', 'NLP', 'spaCy', 'NLTK', 'Wav2Vec', 'Deep Learning', 'Research'],
+    link: 'http://www.jetir.org/papers/JETIR2311382.pdf'
+  },
+  {
+    id: 11,
     title: 'Advanced Blog App',
     points: [
-      'Created a blogging platform with a rich-text editor, REST APIs, and content filters',
-      'Optimized backend with MySQL and pagination for smoother access and navigation',
-      'Integrated user dashboards for personalized post tracking'
+      'Built multi-user blogging platform with REST APIs and role-based access',
+      'Optimized MySQL queries and pagination for improved performance',
+      'Implemented dashboards for content management and user interaction'
     ],
-    tech: ['Django', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
+    tech: ['Django', 'MySQL', 'JavaScript', 'REST APIs', 'Authentication'],
     link: 'https://github.com/riyadd20/Blog-App'
   }
 ];

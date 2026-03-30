@@ -3,17 +3,30 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
+    company: 'Millie Amici LLC',
+    logo: '/MillieAmici_pic.png',
+    title: 'Data Engineer Intern',
+    location: 'Los Angeles, CA',
+    duration: 'Feb 2026 – present',
+    points: [
+      'Secured backend for 1K+ users by implementing PostgreSQL RLS with strict multi-role access isolation',
+      'Built payment and identity workflows using Stripe (Connect, Checkout, webhooks) and Twilio, ensuring compliance pre-launch',
+      'Developed and deployed 10+ serverless microservices (TypeScript/Deno) for payments, auth, and messaging with sub-second response times'
+    ],
+    tech: ['TypeScript', 'PostgreSQL', 'Stripe API', 'Twilio', 'Serverless Architecture'],
+  },
+  {
     company: 'Revergon Solutions',
     logo: '/revergon_logo.png',
-    title: 'Data Engineer Intern',
+    title: 'Software Engineering Intern',
     location: 'Mumbai, India',
     duration: 'Sep 2023 – Apr 2024',
     points: [
-      'Engineered scalable ETL pipelines on AWS (Lambda, S3, DynamoDB, API Gateway) for processing healthcare imaging data, decreasing average data processing time by 15%',
-      'Built Python workflows generating anomaly detection insights and embedding into Power BI dashboards, accelerating clinical assessments',
-      'Automated real-time export of diagnosis reports via a secure API to Flutter mobile app, reducing manual reporting time by 25%'
+      'Architected AWS serverless ETL pipelines (Lambda, S3, DynamoDB, API Gateway), reducing processing time by 15%',
+      'Developed Python-based analytics and visualization workflows, cutting manual analysis time by 75% with validated data pipelines',
+      'Designed secure REST APIs for automated report delivery to a Flutter app, reducing manual reporting effort by 25%'
     ],
-    tech: ['Python', 'AWS', 'DynamoDB', 'Power BI'],
+    tech: ['Python', 'AWS (Lambda/S3/DynamoDB)', 'Power BI', 'Pytest', 'REST APIs'],
   },
   {
     company: 'Reliance Industries Ltd.',
@@ -22,11 +35,11 @@ const experiences = [
     location: 'Mumbai, India',
     duration: 'Jun 2023 – Aug 2023',
     points: [
-      'Developed a cross-platform collaboration app in Flutter, enhancing team workflow and coordination across 3 departments',
-      'Optimized data storage with JSON serialization and asynchronous persistence (SharedPreferences), reducing load times by 20%',
-      'Leveraged GetX for real-time notifications and state management, minimizing UI rebuilds and improving responsiveness'
+      'Built a cross-platform Flutter app adopted by 3 teams (30+ users), reducing coordination overhead by 40%',
+      'Improved app performance by 20% through background processing (Dart isolates) and API response caching (SQLite)',
+      'Implemented real-time notifications and optimized state management (GetX) to enhance responsiveness'
     ],
-    tech: ['Flutter', 'Dart', 'GetX', 'SharedPreferences (JSON serialization)'],
+    tech: ['Flutter', 'Dart', 'SQLite', 'GetX', 'Mobile Development'],
   }
 ];
 

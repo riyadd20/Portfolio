@@ -2,20 +2,61 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const skills = {
-  'Programming Languages': ['Python', 'Java', 'C', 'C++', 'JavaScript', 'TypeScript', 'Scala'],
-  'Web & App Technologies': ['React', 'AngularJS', 'Flutter', 'Android (Kotlin)', 'Node.js', 'Flask', 'Django', 'HTML5', 'CSS', 'Tailwind CSS'],
-  'Machine Learning & AI': ['TensorFlow', 'PyTorch', 'scikit-learn', 'Keras', 'OpenCV', 'spaCy', 'Streamlit UI'],
-  'Databases & Data Analysis': ['R', 'Pandas', 'MySQL', 'PostgreSQL', 'MongoDB', 'Power BI', 'Tableau'],
-  'Cloud & DevOps': ['AWS', 'Google Cloud', 'Docker', 'Git', 'GitHub']
+  'Programming Languages': [
+    'Python', 'Java', 'C', 'C++', 'C#',
+    'JavaScript', 'TypeScript', 'Scala',
+    'Dart', 'Kotlin', 'Go'
+  ],
+
+  'Web & App Technologies': [
+    'React', 'AngularJS', 'Flutter',
+    'Android (Kotlin)', 'Node.js', 'Express',
+    'Flask', 'Django', 'FastAPI', 'Spring Boot',
+    'REST APIs', 'WebSockets',
+    'HTML5', 'CSS', 'Tailwind CSS', 'Streamlit'
+  ],
+
+  'Machine Learning & AI': [
+    'TensorFlow', 'PyTorch', 'scikit-learn', 'Keras',
+    'Transformers (Hugging Face)', 'RAG',
+    'OpenCV', 'spaCy', 'NLTK', 'Pandas'
+  ],
+
+  'Databases & Data': [
+    'PostgreSQL', 'MySQL', 'MongoDB', 'Redis',
+    'R', 'Power BI', 'Tableau'
+  ],
+
+  'Cloud & DevOps': [
+    'AWS', 'Google Cloud Platform', 'Docker',
+    'Kubernetes', 'RabbitMQ',
+    'Prometheus', 'Grafana',
+    'Git', 'GitHub'
+  ]
 };
 
 const skillIcons = {
-  Python: "/python.svg", Java: "/java.svg", C: "/c.svg", "C++": "/cpp.svg", JavaScript: "/javascript.svg", TypeScript: "/typescript.svg", Scala: "/scala.svg",
-  React: "/react.svg", AngularJS: "/angularjs.svg", Flutter: "/flutter.svg", "Android (Kotlin)": "/kotlin.svg", "Node.js": "/nodejs.svg", Flask: "/flask.svg",
-  Django: "/django.svg", HTML5: "/html5.svg", CSS: "/css.svg", "Tailwind CSS": "/tailwind-css.svg", TensorFlow: "/tensorflow.svg", PyTorch: "/pytorch.svg",
-  "scikit-learn": "/scikit-learn.svg", Keras: "/keras.svg", OpenCV: "/opencv.svg", spaCy: "/spacy.png", "Streamlit UI": "/streamlit.svg",
-  R: "/r.svg", Pandas: "/pandas.svg", MySQL: "/mysql.svg", PostgreSQL: "/postgresql.svg", MongoDB: "/mongodb.svg", "Power BI": "/power-bi.svg", Tableau: "/tableau.svg",
-  AWS: "/aws.svg", "Google Cloud": "/gcp.svg", Docker: "/docker.svg", Git: "/git.svg", GitHub: "/github.svg"
+  Python: "/python.svg", Java: "/java.svg", C: "/c.svg", "C++": "/cpp.svg", "C#": "/c-sharp.svg",
+  JavaScript: "/javascript.svg", TypeScript: "/typescript.svg", Scala: "/scala.svg",
+  Dart: "/dart.svg", Kotlin: "/kotlin.svg", Go: "/go.svg",
+
+  React: "/react.svg", AngularJS: "/angularjs.svg", Flutter: "/flutter.svg",
+  "Android (Kotlin)": "/kotlin.svg", "Node.js": "/nodejs.svg", Express: "/express.svg",
+  Flask: "/flask.svg", Django: "/django.svg", FastAPI: "/fastapi.svg", "Spring Boot": "/spring-boot.svg",
+  "REST APIs": "/rest-api.svg", WebSockets: "/websockets.svg",
+  HTML5: "/html5.svg", CSS: "/css.svg", "Tailwind CSS": "/tailwind-css.svg", Streamlit: "/streamlit.svg",
+
+  TensorFlow: "/tensorflow.svg", PyTorch: "/pytorch.svg", "scikit-learn": "/scikit-learn.svg",
+  Keras: "/keras.svg", OpenCV: "/opencv.svg", spaCy: "/spacy.png",
+  "Transformers (Hugging Face)": "/hugging-face.svg", RAG: "/rag.avif", NLTK: "/nltk.svg", Pandas: "/pandas.svg",
+
+  R: "/r.svg", MySQL: "/mysql.svg", PostgreSQL: "/postgresql.svg", MongoDB: "/mongodb.svg", Redis: "/redis.svg",
+  "Power BI": "/power-bi.svg", Tableau: "/tableau.svg",
+
+  AWS: "/aws.svg", "Google Cloud Platform": "/gcp.svg", Docker: "/docker.svg",
+  Kubernetes: "/kubernetes.svg", RabbitMQ: "/rabbitmq.svg",
+  Prometheus: "/prometheus.svg", Grafana: "/grafana.svg",
+  Git: "/git.svg", GitHub: "/github.svg"
 };
 
 const Skills = () => {
