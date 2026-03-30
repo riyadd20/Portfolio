@@ -48,7 +48,7 @@ const skillIcons = {
 
   TensorFlow: "/tensorflow.svg", PyTorch: "/pytorch.svg", "scikit-learn": "/scikit-learn.svg",
   Keras: "/keras.svg", OpenCV: "/opencv.svg", spaCy: "/spacy.png",
-  "Transformers (Hugging Face)": "/hugging-face.svg", RAG: "/rag.avif", NLTK: "/nltk.svg", Pandas: "/pandas.svg",
+  "Transformers (Hugging Face)": "/hugging-face.svg", RAG: "/rag.avif", NLTK: "/nltk.png", Pandas: "/pandas.svg",
 
   R: "/r.svg", MySQL: "/mysql.svg", PostgreSQL: "/postgresql.svg", MongoDB: "/mongodb.svg", Redis: "/redis.svg",
   "Power BI": "/power-bi.svg", Tableau: "/tableau.svg",

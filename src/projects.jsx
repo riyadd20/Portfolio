@@ -10,7 +10,7 @@ const projects = [
       'Scaled asynchronous processing by separating scraping and rule evaluation via RabbitMQ and multithreading',
       'Deployed Kubernetes-based system with Redis caching and Prometheus/Grafana monitoring for traffic spikes'
     ],
-    tech: ['Python', 'Kubernetes', 'Redis', 'RabbitMQ', 'Prometheus', 'Grafana', 'Multithreading', 'Web Scraping'],
+    tech: ['Python', 'Kubernetes', 'Redis', 'RabbitMQ', 'Prometheus', 'Grafana', 'Multithreading', 'Web Scraping', 'Docker'],
     link: 'https://github.com/riyadd20/DropGrid'
   },
   {
